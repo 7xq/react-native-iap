@@ -22,17 +22,17 @@ fun Promise.safeResolve(value: Any?) {
 fun Promise.safeReject(message: String) = this.safeReject(message, null, null)
 
 fun Promise.safeReject(
-    code: String?,
+    code: String,
     message: String?,
 ) = this.safeReject(code, message, null)
 
 fun Promise.safeReject(
-    code: String?,
+    code: String,
     throwable: Throwable?,
 ) = this.safeReject(code, null, throwable)
 
 fun Promise.safeReject(
-    code: String?,
+    code: String,
     message: String?,
     throwable: Throwable?,
 ) {
